@@ -1,0 +1,104 @@
+:root {
+  --desaturatedRed: hsl(0, 36%, 70%);
+  --softRed: hsl(0, 93%, 68%);
+  --darkGrayishRed: hsl(0, 6%, 24%);
+
+  /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) */
+  /* - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  width: 60%;
+  padding: 6rem 21rem 16rem 16rem;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.right {
+  width: 40%;
+}
+
+img {
+  width: 16.5rem;
+  margin-bottom: 13rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  line-height: 1.1;
+  letter-spacing: 1rem;
+  color: var(--darkGrayishRed);
+  margin-bottom: 3.5rem;
+}
+
+h1 span {
+  color: var(--desaturatedRed);
+  font-weight: 300;
+}
+
+p {
+  color: var(--desaturatedRed);
+  line-height: 1.5;
+  margin-bottom: 5rem;
+}
+
+form {
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 3.5rem;
+  border: 1px solid var(--desaturatedRed);
+  width: fit-content;
+}
+
+input {
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  width: 30rem;
+  padding: 2rem 0;
+}
+
+input::placeholder {
+  color: var(--desaturatedRed);
+}
+
+button {
+  border: none;
+  background: none;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 2rem 4rem;
+  border-radius: 100px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.image {
+  background-image: url("./images/hero-desktop.jpg");
+  background-size: cover;
+  background-position: center center;
+}
